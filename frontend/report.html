@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generation</title>
+    <link rel="stylesheet" href="home.css"> <!-- Keep your CSS -->
+    
+ <style>
+        .report-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.report-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.report-table td:first-child {
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+
+.bmi {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bmi.underweight {
+    color: blue;
+}
+
+.bmi.healthy {
+    color: green;
+}
+
+.bmi.overweight {
+    color: orange;
+}
+
+.bmi.obese {
+    color: red;
+}
+
+.key-insights {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #e91e63;
+    font-size: 18px;
+}
+
+.health-risk {
+    background: #fff3cd;
+    padding: 15px;
+    border-left: 5px solid #ff9800;
+    font-size: 18px;
+}
+
+.improvement {
+    background: #e3f2fd;
+    padding: 15px;
+    border-left: 5px solid #2196f3;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .upload-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .file-label {
+            background-color: #be408e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .file-label i {
+            font-size: 18px;
+        }
+        #fileInput {
+            display: none;
+        }
+        #generate-btn, #gen-btn {
+            background-color: #0d3f4f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #generate-btn:hover, #gen-btn:hover {
+            background-color: #005f73;
+        }
+        #statusMessage {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .report-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.bmi {
+    font-weight: bold;
+}
+
+.bmi.underweight { color: #1E90FF; } /* Blue */
+.bmi.healthy { color: #28A745; } /* Green */
+.bmi.overweight { color: #FFC107; } /* Yellow */
+.bmi.obese { color: #DC3545; } /* Red */
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="NutriFlow Logo">
+    </header>
+
+    <h2>Upload Your Document for Report Generation</h2>
+
+    <div class="upload-container">
+        <label class="file-label" for="fileInput">
+            <i class="fas fa-upload"></i> Browse File
+        </label>
+        <input type="file" id="fileInput" name="file" accept=".pdf,.docx,.txt">
+        <button id="gen-btn">Generate Report</button>
+    </div>
+
+    <h2>Report Generation using Data Given</h2>
+    <button id="generate-btn">Generate Report</button>
+    <div id="reportContainer"></div>
+    <p id="statusMessage"></p>
+
+    <!-- Moved JavaScript to end of body for better execution -->
+    <script src="report.js"></script>
+</body>
+</html>

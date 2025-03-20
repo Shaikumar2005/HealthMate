@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Gamification App</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Health Gamification</h1>
+    </header>
+
+    <!-- Step Challenge Section -->
+    <section class="step-challenge">
+        <h2>Step Challenge</h2>
+        <p>Enter your daily steps below:</p>
+        <input type="number" id="stepsInput" placeholder="Enter your steps">
+        <button id="submitSteps">Submit Steps</button>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <p class="progress-text" id="progressText">Keep going! Try to reach 5000 steps to earn a badge.</p>
+        <p id="totalStepsDisplay" style="font-weight: bold;"></p>
+        <p id="badgeMessage"></p>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard"></ul>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+#signin {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fdfaf6;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.logo {
+    width: 100 px;
+    margin-bottom: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color:  #cc0066;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #cc0066;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color:#99004d;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #c0392b;
+    margin-top: 5px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.signup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.signup-box h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+.otp-btn {
+    width: 100%;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.otp-btn:hover {
+    background: #45a049;
+}
+
+
+/* account page styles 
+#acc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fdf9f6; 
+}
+
+.con { 
+    width: 100%;
+    max-width: 400px; 
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+select {
+    background-position: right 10px center;
+    background-size: 20px;
+}
+*/
+/* Center the form */
+.con {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto; /* Centering horizontally */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Align text elements */
+}
+
+
+/* Style form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between form elements */
+    align-items: center;
+}
+
+/* Input and Select Styles */
+input,select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Login link styling */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+select {
+    width: 100%;
+    padding: 10px; /* Match input padding */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Same as input border */
+    border-radius: 5px; /* Match input border radius */
+    background-color: white;
+    appearance: none; /* Remove default dropdown styles */
+    height: 40px; /* Match input height */
+}
+
+.gender-con {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.gender-con select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    height: 40px;
+}
+
